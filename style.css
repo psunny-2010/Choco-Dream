@@ -1,0 +1,846 @@
+   *{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+             scroll-behavior: smooth;
+        }
+        #section-1{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+              position: relative;
+            z-index: 1000;
+        }
+        .logo{
+            color: white;
+            background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/logo.png);
+             background-repeat: no-repeat;
+            background-size:99%;
+            background-position: center;
+            height: 40px;
+            width: 120px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            gap: 100px;
+            padding: 0;
+            margin: 0 0 0 280px;
+            width: 41vw;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 19px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            position: relative;
+        }
+        nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: lightpink;
+}
+nav ul li a.active:hover{
+    text-decoration: none;
+}
+        nav ul li a:hover{
+             text-decoration: underline;
+            text-decoration-color: lightpink;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+            transition: all ease 1s;
+        }
+        .socialmedia{
+            width: 140px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 0 0 0 237px;
+        }
+        .socialmedialogo{
+            width: 36.66px;
+            height: 36.66px;
+            border-radius: 50%;
+            background-color: rgb(247, 215, 215);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    .socialmedialogo:hover
+    {
+        background-color: white;
+    }
+        .socialmedialogo img{
+            height: 20px;
+            width: 20px;
+              background-color: rgb(247, 215, 215);
+        }
+
+             .sidesticky-1{
+        position: fixed;
+        right: 0;
+        bottom: 230px;
+        color: black;
+        width: 170px;
+        height: 60px;
+        display: flex;
+        background-color: #f2f2f2f7;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        z-index: 2000;
+    }
+
+    .sidesticky-1 h1{
+           font-weight: bold;
+           font-size: 28px;
+           color: rgb(35, 34, 34);
+    }
+    .sidesticky-1 p {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+         color: rgb(35, 34, 34);
+    }
+    .sidesticky-2{
+        position: fixed;
+        right: 0;
+        bottom: 160px;
+        color: black;
+        width: 170px;
+        height: 60px;
+        display: flex;
+        background-color: rgb(244, 52, 84);
+        color: white;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+          z-index:2000;
+    }
+    .fa-solid{
+        font-size: 25px;
+        color: white;
+        border: none;
+    }
+    .img1{
+        height: 100vh;
+        width: 95%;
+        margin: 0 auto;
+        top: -13px;
+        left: -19px;
+        position: absolute;
+            animation: fadeInSlow 1s ease forwards;
+    }
+    .img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .img2{
+          position: absolute;
+          bottom: 75px;
+          left: -30px;
+           animation: fallDown 1s ease forwards;
+          animation-delay: 1.5s;
+    }
+    .img3{
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        top: -30px;
+        right: 270px;
+          animation: fallDown 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .img4{
+        position: absolute;
+        height: 110px;
+        width: 70px;
+        top: 40px;
+        right: 135px;
+          animation: fallDown 1s ease forwards;
+         animation-delay: 1.2s;
+    }
+    .img5{
+        position: absolute;
+        height: 140px;
+        width: 140px;
+        top: 34%;
+        right: 170px;
+          animation: fallDown 1s ease forwards;
+    animation-delay: 2s;
+    }
+    .img{
+        opacity: 0;
+    }
+    /* FADE IN (img1) */
+@keyframes fadeInSlow {
+    from{
+        opacity:0;
+        transform: scale(1.05);
+    }
+    to{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+
+/* FALL FROM TOP */
+@keyframes fallDown {
+    0%{
+        opacity:0;
+        transform: translateY(-150px);
+    }
+
+    70%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+#section-2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.sec2cont{
+    width: 100%;
+    height: 73vh;
+    display: flex
+}
+.sec2inside-1{
+    width:590px ;
+    height: 100%;
+    margin-left: 160px;
+}
+.sec2inside-2{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+}
+.sec2inside-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#hone{
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+   font-family: cursive;
+   font-style: italic;
+   margin:0 0 -10px 0;
+   padding: 0;
+}
+#htwo{
+    font-size: 65px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+   margin: 0;
+   padding: 0;
+}
+.sec2inside-2 p{
+    padding: 0;
+    margin: 40px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: gray;
+}
+.sec2inside-2 button{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin: 35px 0 0 250px;
+}
+.sec2inside-2 button:hover{
+    background-color: black;
+    color: white;
+}
+#section-2 .img-2{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 130px;
+    right: -65px;
+}
+.img-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#section-3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3cont{
+   width: 100%;
+   height: 81vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   gap: 30px;
+}
+.sec3img{
+    height: 100%;
+    position: relative;
+}
+.sec3img1{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3img2{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3img3{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contsec3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.464);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .9s ease;
+    color: white !important;
+}
+.sec3img:hover .contsec3{
+    opacity: 1;
+    visibility: visible;
+}
+#section-4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4cont{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    overflow: hidden;
+}
+.sec4inner{
+     text-align: center;
+     height: 100%;
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+}
+.sec4inner h2{
+    font-size: 27px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+.sec4inner h2 em{
+    font-weight: bold;
+}
+.sec4inner p{
+    font-size:20px ;
+    color: gray;
+    letter-spacing: 1px;
+    margin: 25px 0 0 0 ;
+    padding: 0;
+}
+.sec4img{
+    width: 220px;
+    height: 220px;
+   
+}
+.sec4img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#section-5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contsec5{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.sec5img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.sec5img img{
+    height: 100%;
+    width: 100%;
+}
+.borderplaybtn{
+     position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 1px rgb(251, 217, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.play-btn{
+     width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color:  rgb(251, 217, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+   
+}
+.contsec5:hover{
+    filter: opacity(0.7);
+    transition: all 0.5s ease-in-out;
+}
+.contsec5:hover .play-btn{
+    background-color: white;
+}
+.contsec5:hover .sec5img img{
+    transform: scale(1.05);
+      transition: transform 0.5s ease-in-out;
+}
+#section-6{
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/testimonials-background.png?id=74);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec6animation{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    height:140px;
+    margin-top: 50px;
+}
+.sec6cont-1{
+    position:absolute;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0; 
+      animation: reviewSlide 6s infinite linear;
+}
+.sec6cont-1 p{
+    font-size:18px ;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.sec6cont-2 p{
+    font-size:18px ;
+    letter-spacing: 1px;
+      padding: 0;
+    margin: 0;
+      line-height: 30px;
+    color: gray;
+     margin-bottom: 40px;
+}
+.sec6cont-1 span{
+    font-size: 28px;
+   
+}
+.sec6cont-2 span{
+    font-size: 28px;
+}
+.sec6cont-2{
+   position:absolute;
+    opacity: 0; 
+     width: fit-content;
+    height: fit-content;
+      animation: reviewSlide 6s linear infinite;
+      animation-delay:3s;
+}
+@keyframes reviewSlide{
+      0%{
+        opacity:0;
+        
+    }
+      10%{
+        opacity:1;
+        
+    }
+    50%{
+        opacity:1;
+        
+    }
+     60%{
+        opacity: 0;
+     }
+      100%{
+        
+        opacity:0;
+      
+    }
+}
+.arrows{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.arrowscont{
+    height: 30px;
+    width: 30px;
+    border: solid black 1px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowscont{
+    font-size: 12px;
+    font-weight: bolder;
+    transform: all ease 0.5s;
+}
+.arrowscont:hover{
+    background-color: black;
+    color: white;
+}#section-7{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+iframe{
+    border:0; filter: grayscale(100%) invert(100%) contrast(130%);
+}
+.visit{
+    position: absolute;
+    width: 80%;
+    height: 65vh;
+    top: 73%;
+    left: 10%;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+input::placeholder{
+    font-size: 17px;
+    color: gray;
+      padding-left: 15px;
+}
+textarea::placeholder{
+     font-size: 17px;
+    color: gray;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+textarea{
+    width: 80%;
+    height: 130px;
+    border: none;
+    border-bottom: solid 1px black;
+    resize: none;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.address{
+    width: 50%;
+    height: 100%;
+}
+.form button{
+    width: 120px;
+    height: 60px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    margin-top: 23px;
+    letter-spacing: 4px;
+    transition: background ease .5s;
+}
+.form button:hover{
+    background-color: black;
+    color: white;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address h1{
+    font-size: 41px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+.address h1 em{
+    font-weight: bold;
+    font-family: cursive;
+}
+.address p{
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    color: gray;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.address h4{
+    padding: 0;
+    margin: 12px  0 0 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: gray;
+}
+#section-8{
+    width: 100%;
+    height: 264vh;
+    position: relative;
+}
+.bgimgsec8{
+    width: 85%;
+    height: 130vh;
+      background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/background-img-2.jpg);
+    background-position: center;
+    background-size:118%;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left:8%;
+}
+.sec8grid{
+    width: 80%;
+    margin: 0 auto;
+    height: 153vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 74vh 74vh;
+    grid-gap: 30px;
+    position: relative;
+    top: 42%;
+    z-index: 1500;
+}
+.gridimg{
+    height: 100%;
+    position: relative;
+}
+.gridimg1{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg2{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg3{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg4{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg5{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg6{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blackbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.518);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+}
+.gridimg:hover .blackbg{
+    opacity: 1;
+    visibility: visible;
+}
+#section-9{
+    width: 100%;
+    height: 65vh;
+    margin-top: 160px;
+    border: solid black 1px;
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/footer-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#section-9 p{
+        letter-spacing: 1px;
+        font-size:18px;
+        color: white;
+        line-height: 30px;
+}
+#section-9 p a{
+    text-decoration: none;
+    color: white;
+     letter-spacing: 1px;
+        font-size:18px;
+}
+#section-9 p a:hover{
+    color: pink;
+}
+#section-9 .socialmedia{
+    margin-left: 60px;
+    cursor: pointer;
+}
+.tophover{
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(253, 216, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color:rgb(253, 216, 221) ;
+    position: absolute;
+      right: 40px;
+        bottom: 65px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 1000;
+}
+.tophover:hover{
+    background-color: rgba(0, 0, 0, 0.777);
+    transition: all ease 0.5s;
+    border: solid 1px black;
+}
+.fa-angles-up{
+    font-size: 17px;
+    color: rgb(249, 146, 162);
+}
+.reachtop{
+      opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+.reachtop.show{
+    opacity: 1;
+    visibility: visible;
+}

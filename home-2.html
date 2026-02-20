@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bridge</title>\
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+             scroll-behavior: smooth;
+        }
+        #section-1{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+              position: relative;
+            z-index: 1000;
+        }
+        .logo{
+            color: white;
+            background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/logo.png);
+             background-repeat: no-repeat;
+            background-size:99%;
+            background-position: center;
+            height: 40px;
+            width: 120px;
+            margin-left: 50px;
+
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            gap: 100px;
+            padding: 0;
+            margin: 0 0 0 280px;
+            width: 41vw;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 19px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+        }
+        nav ul li a.active{
+            text-decoration: underline;
+            text-decoration-color: lightpink;
+            text-decoration-thickness: 2px;
+        }
+        nav ul li a:hover{
+             text-decoration: underline;
+            text-decoration-color: lightpink;
+            text-decoration-thickness: 2px;
+            transition: all ease 1s;
+        }
+        .socialmedia{
+            width: 140px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 0 0 0 237px;
+        }
+        .socialmedialogo{
+            width: 36.66px;
+            height: 36.66px;
+            border-radius: 50%;
+            background-color: rgb(247, 215, 215);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    .socialmedialogo:hover
+    {
+        background-color: white;
+    }
+        .socialmedialogo img{
+            height: 20px;
+            width: 20px;
+              background-color: rgb(247, 215, 215);
+        }
+
+             .sidesticky-1{
+        position: fixed;
+        right: 0;
+        bottom: 230px;
+        color: black;
+        width: 170px;
+        height: 60px;
+        display: flex;
+        background-color: #f2f2f2f7;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        z-index: 2000;
+    }
+
+    .sidesticky-1 h1{
+           font-weight: bold;
+           font-size: 28px;
+           color: rgb(35, 34, 34);
+    }
+    .sidesticky-1 p {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+         color: rgb(35, 34, 34);
+    }
+    .sidesticky-2{
+        position: fixed;
+        right: 0;
+        bottom: 160px;
+        color: black;
+        width: 170px;
+        height: 60px;
+        display: flex;
+        background-color: rgb(244, 52, 84);
+        color: white;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+          z-index:2000;
+    }
+    .fa-solid{
+        font-size: 25px;
+        color: white;
+        border: none;
+    }
+    .img1{
+        height: 100vh;
+        width: 95%;
+        margin: 0 auto;
+        top: -13px;
+        left: -19px;
+        position: absolute;
+            animation: fadeInSlow 1s ease forwards;
+    }
+    .img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .img2{
+          position: absolute;
+          bottom: 75px;
+          left: -30px;
+           animation: fallDown 1s ease forwards;
+          animation-delay: 1.5s;
+    }
+    .img3{
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        top: -30px;
+        right: 270px;
+          animation: fallDown 1s ease forwards;
+        animation-delay: 1s;
+    }
+    .img4{
+        position: absolute;
+        height: 110px;
+        width: 70px;
+        top: 40px;
+        right: 135px;
+          animation: fallDown 1s ease forwards;
+         animation-delay: 1.2s;
+    }
+    .img5{
+        position: absolute;
+        height: 140px;
+        width: 140px;
+        top: 34%;
+        right: 170px;
+          animation: fallDown 1s ease forwards;
+    animation-delay: 2s;
+    }
+    .img{
+        opacity: 0;
+    }
+    /* FADE IN (img1) */
+@keyframes fadeInSlow {
+    from{
+        opacity:0;
+        transform: scale(1.05);
+    }
+    to{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+
+/* FALL FROM TOP */
+@keyframes fallDown {
+    0%{
+        opacity:0;
+        transform: translateY(-150px);
+    }
+
+    70%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+#section-2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.sec2cont{
+    width: 100%;
+    height: 73vh;
+    display: flex
+}
+.sec2inside-1{
+    width:590px ;
+    height: 100%;
+    margin-left: 160px;
+}
+.sec2inside-2{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+}
+.sec2inside-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#hone{
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+   font-family: cursive;
+   font-style: italic;
+   margin:0 0 -10px 0;
+   padding: 0;
+}
+#htwo{
+    font-size: 65px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+   margin: 0;
+   padding: 0;
+}
+.sec2inside-2 p{
+    padding: 0;
+    margin: 40px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: gray;
+}
+.sec2inside-2 button{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin: 35px 0 0 250px;
+}
+#section-2 .img-2{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 130px;
+    right: -65px;
+}
+.img-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#section-3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3cont{
+   width: 100%;
+   height: 81vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   gap: 30px;
+}
+.sec3img{
+    height: 100%;
+    position: relative;
+}
+.sec3img1{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3img2{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3img3{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contsec3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.464);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .9s ease;
+    color: white !important;
+}
+.sec3img:hover .contsec3{
+    opacity: 1;
+    visibility: visible;
+}
+#section-4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4cont{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    overflow: hidden;
+}
+.sec4inner{
+     text-align: center;
+     height: 100%;
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+}
+.sec4inner h2{
+    font-size: 27px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+.sec4inner h2 em{
+    font-weight: bold;
+}
+.sec4inner p{
+    font-size:20px ;
+    color: gray;
+    letter-spacing: 1px;
+    margin: 25px 0 0 0 ;
+    padding: 0;
+}
+.sec4img{
+    width: 220px;
+    height: 220px;
+   
+}
+.sec4img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#section-5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contsec5{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.sec5img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.sec5img img{
+    height: 100%;
+    width: 100%;
+}
+.borderplaybtn{
+     position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 1px rgb(251, 217, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.play-btn{
+     width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color:  rgb(251, 217, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+   
+}
+.contsec5:hover{
+    filter: opacity(0.6);
+    transition: all 0.5s ease-in-out;
+}
+.contsec5:hover .sec5img img{
+    transform: scale(1.05);
+      transition: transform 0.5s ease-in-out;
+}
+#section-6{
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/testimonials-background.png?id=74);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec6animation{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    height:140px;
+    margin-top: 50px;
+}
+.sec6cont-1{
+    position:absolute;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0; 
+      animation: reviewSlide 6s infinite linear;
+}
+.sec6cont-1 p{
+    font-size:18px ;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.sec6cont-2 p{
+    font-size:18px ;
+    letter-spacing: 1px;
+      padding: 0;
+    margin: 0;
+      line-height: 30px;
+    color: gray;
+     margin-bottom: 40px;
+}
+.sec6cont-1 span{
+    font-size: 28px;
+   
+}
+.sec6cont-2 span{
+    font-size: 28px;
+}
+.sec6cont-2{
+   position:absolute;
+    opacity: 0; 
+     width: fit-content;
+    height: fit-content;
+      animation: reviewSlide 6s linear infinite;
+      animation-delay:3s;
+}
+@keyframes reviewSlide{
+      0%{
+        opacity:0;
+        
+    }
+      10%{
+        opacity:1;
+        
+    }
+    50%{
+        opacity:1;
+        
+    }
+     60%{
+        opacity: 0;
+     }
+      100%{
+        
+        opacity:0;
+      
+    }
+}
+.arrows{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.arrowscont{
+    height: 30px;
+    width: 30px;
+    border: solid black 1px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowscont{
+    font-size: 12px;
+    font-weight: bolder;
+    transform: all ease 0.5s;
+}
+.arrowscont:hover{
+    background-color: black;
+    color: white;
+}#section-7{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+iframe{
+    border:0; filter: grayscale(100%) invert(100%) contrast(130%);
+}
+.visit{
+    position: absolute;
+    width: 80%;
+    height: 65vh;
+    top: 73%;
+    left: 10%;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+input::placeholder{
+    font-size: 17px;
+    color: gray;
+      padding-left: 15px;
+}
+textarea::placeholder{
+     font-size: 17px;
+    color: gray;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+textarea{
+    width: 80%;
+    height: 130px;
+    border: none;
+    border-bottom: solid 1px black;
+    resize: none;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.address{
+    width: 50%;
+    height: 100%;
+}
+.form button{
+    width: 120px;
+    height: 60px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    margin-top: 23px;
+    letter-spacing: 4px;
+    transition: background ease .5s;
+}
+.form button:hover{
+    background-color: black;
+    color: white;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address h1{
+    font-size: 41px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+.address h1 em{
+    font-weight: bold;
+    font-family: cursive;
+}
+.address p{
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    color: gray;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.address h4{
+    padding: 0;
+    margin: 12px  0 0 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: gray;
+}
+#section-8{
+    width: 100%;
+    height: 264vh;
+    position: relative;
+}
+.bgimgsec8{
+    width: 85%;
+    height: 130vh;
+      background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/background-img-2.jpg);
+    background-position: center;
+    background-size:118%;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left:8%;
+}
+.sec8grid{
+    width: 80%;
+    margin: 0 auto;
+    height: 153vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 74vh 74vh;
+    grid-gap: 30px;
+    position: relative;
+    top: 42%;
+    z-index: 1500;
+}
+.gridimg{
+    height: 100%;
+    position: relative;
+}
+.gridimg1{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg2{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg3{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg4{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg5{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridimg6{
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/img-gallery-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blackbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.518);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+}
+.gridimg:hover .blackbg{
+    opacity: 1;
+    visibility: visible;
+}
+#section-9{
+    width: 100%;
+    height: 65vh;
+    margin-top: 160px;
+    border: solid black 1px;
+    background-image: url(https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/footer-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#section-9 p{
+        letter-spacing: 1px;
+        font-size:18px;
+        color: white;
+        line-height: 30px;
+}
+#section-9 .socialmedia{
+    margin-left: 60px;
+    cursor: pointer;
+}
+.tophover{
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(253, 216, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color:rgb(253, 216, 221) ;
+    position: absolute;
+      right: 40px;
+        bottom: 65px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 1000;
+}
+.tophover:hover{
+    background-color: rgba(0, 0, 0, 0.777);
+    transition: all ease 0.5s;
+    border: solid 1px black;
+}
+.fa-angles-up{
+    font-size: 17px;
+    color: rgb(249, 146, 162);
+}
+.reachtop{
+      opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+.reachtop.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+    </style>
+</head>
+<body>
+      <section id="section-1">
+        <header>
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html"class="" target="_self">Home</a></li>
+                    <li><a href="" class=""  target="_self">Team</a></li>
+                    <li><a href=""class="" target="_self">About</a></li>
+                    <li><a href=""class=""  target="_self">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="socialmedia">
+                <div class="socialmedialogo"><img src="data:image/png;base64,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" alt=""></div>
+                <div class="socialmedialogo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgNb85DxJ-a_qySTXWIVFpwFlUnR9R54qqQ&s" alt=""></div>
+                <div class="socialmedialogo"><img src="data:image/png;base64,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" alt=""></div>
+            </div>
+        </header>
+        <div class="img1 img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-graphic-3.png" alt=""></div>
+        <div class="img2 img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/graphic-1.png" alt=""></div>
+        <div class="img3 img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/graphic-4.png" alt=""></div>
+        <div class="img4 img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/graphic-3.png" alt=""></div>
+        <div class="img5 img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-graphic-2.png" alt=""></div>
+        <div class="sidesticky-1"><h1>630+</h1><div><p>Bridge</p> <p>Demos</p></div></div>
+    <div class="sidesticky-2"><i class="fa-solid fa-suitcase"></i></i>Buy Now $69</div>
+   <a href="#section-1" class="reachtop" style="width: fit-content;height: fit-content;text-decoration: none;color:rgb(250, 161, 173) ;"> <div class="tophover"><i class="fa-solid fa-angles-up"></i></div></a>
+      </section>
+      <section id="section-2">
+         <div class="sec2cont">
+            <div class="sec2inside-1"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/h1-img-1.jpg" alt=""></div>
+            <div class="sec2inside-2">
+           <h1 id="hone">Artisan </h1>
+            <h1 id="htwo">chocolatier</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>
+                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <br>
+                  minim veniam quis nostrud exercitation</p>
+            <button>Read All</button>
+        </div>
+         </div>
+ <div class="img-2"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/graphic-5.png" alt=""></div>
+
+      </section>
+      <section id="section-3">
+        <div class="sec3cont">
+            <div class="sec3img sec3img1">
+            <div class="contsec3">
+                 <h1 id="hone">Love</h1>
+            <h1 id="htwo">Chocolate</h1>
+            </div>
+            </div>
+            <div class="sec3img sec3img2">
+              <div class="contsec3">
+                  <h1 id="hone">Workshop</h1>
+            <h1 id="htwo">registration</h1>
+              </div>
+            </div>
+            <div class="sec3img sec3img3">
+                <div class="contsec3">
+                    <h1 id="hone">Think</h1>
+            <h1 id="htwo">Chocolate</h1>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="section-4">
+        <div class="sec4cont">
+            <div class="sec4inner" style="margin-left: 50px;">
+                <div class="sec4img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/icon-1.jpg" alt=""></div>
+                <h2><em>Peper</em> & sweet</h2>
+                <p>Lorem ipsum dolor sit amet, <br>
+                     consectetur adipisicing elit, sed <br>
+                      do eiusmod tempor incididunt</p>
+            </div>
+            <div class="sec4inner"style="margin-left: 80px;">
+                <div class="sec4img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/icon-2.jpg" alt=""></div>
+                 <h2><em>Mint</em> & sweet</h2>
+                <p>Lorem ipsum dolor sit amet, <br>
+                     consectetur adipisicing elit, sed <br>
+                      do eiusmod tempor incididunt</p>
+            </div>
+            <div class="sec4inner"style="margin-left: 80px;">
+                <div class="sec4img"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/icon-3.jpg" alt=""></div>
+                 <h2><em>Hazelnut</em> caramel</h2>
+                <p>Lorem ipsum dolor sit amet, <br>
+                     consectetur adipisicing elit, sed <br>
+                      do eiusmod tempor incididunt</p>
+            </div>
+            <div class="sec4inner" style="margin-left: 80px;">
+                <div class="sec4img" style="width: fit-content;"><img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/icon-4.jpg" alt=""></div>
+                 <h2><em>Chilli</em> & sweet</h2>
+                <p>Lorem ipsum dolor sit amet, <br>
+                     consectetur adipisicing elit, sed <br>
+                      do eiusmod tempor incididunt</p>
+            </div>
+        </div>
+      </section>
+      <section id="section-5">
+        <div class="contsec5">
+            <div class="sec5img">
+                <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/video-background.jpg" alt="">
+            </div>
+           <div class="borderplaybtn">
+             <div class="play-btn" id="playBtn">
+                       ▶
+            </div>
+           </div>
+        </div>
+      </section>
+      <section id="section-6">
+         <h1 id="hone">Chocolate reviews</h1>
+       <div class="sec6animation">
+         <div class="sec6cont-1">
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>
+                 veniam quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            <span>
+                Medison Jon
+            </span>
+        </div>
+         <div class="sec6cont-2">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>
+                 veniam quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            <span>
+               Norah Johnson
+            </span>
+         </div>
+       </div>
+       <div class="arrows">
+        <div class="arrowscont">&lt;</div>
+        <div class="arrowscont">&gt;</div>
+       </div>
+      </section>
+      <section id="section-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424141.6978944982!2d150.93197474999997!3d-33.84824395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sin!4v1771526692605!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <div class="visit">
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Name*">
+                <input type="email" name="" id="" placeholder="Email*">
+                <textarea name="" id="" placeholder="Message"></textarea>
+                <button>SEND</button>
+            </div>
+            <div class="address">
+                <h1><em>Visit</em> our shops</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>
+                    , sed do eiusmod tempor incididunt ut labore.</p>
+                <h4 style="margin-top: 30px;">09:00-19h Monday – Friday</h4>
+                <h4>75-11 Jewett Ave Jersey City, NJ 07304 USA</h4>
+                <h4>+ (1) 555 678 786</h4>
+            </div>
+           </div>
+        </section>
+        <section id="section-8">
+    <div class="bgimgsec8">
+    </div>
+       <div class="sec8grid">
+           <div class="gridimg gridimg1 "><div class="blackbg"></div></div>
+           <div class="gridimg gridimg2"><div class="blackbg"></div></div>
+           <div class="gridimg gridimg3"><div class="blackbg"></div></div>
+           <div class="gridimg gridimg4"><div class="blackbg"></div></div>
+           <div class="gridimg gridimg5"><div class="blackbg"></div></div>
+           <div class="gridimg gridimg6"><div class="blackbg"></div></div>
+       </div>
+        </section>
+        <section id="section-9">
+            <div class="logo"></div>
+            <p>© Copyright Qode Interactive - All Rights Reserved <br>
+
+              Proudly Made For You.</p>
+               <div class="socialmedia">
+                <div class="socialmedialogo"><img src="data:image/png;base64,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" alt=""></div>
+                <div class="socialmedialogo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgNb85DxJ-a_qySTXWIVFpwFlUnR9R54qqQ&s" alt=""></div>
+                <div class="socialmedialogo"><img src="data:image/png;base64,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" alt=""></div>
+            </div>
+        </section>
+        <script>
+            const topBtn = document.querySelector(".reachtop");
+
+window.addEventListener("scroll", () => {
+
+    const a = window.innerHeight*1.1;
+
+    if (window.scrollY >= a) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+
+});
+const links = document.querySelectorAll("nav a");
+
+links.forEach(link => {
+    if(link.href === window.location.href){
+        link.classList.add("");
+    }
+});
+        </script>
+</body>
+</html>
